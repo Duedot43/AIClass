@@ -160,6 +160,6 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
-Simester One/Unit 2/Games/games.json
-Simester Two/Unit 2/music/data/million_playlists
-Simester Two/Unit 2/music/data/tracks.csv
+#Simester One/Unit 2/Games/games.json
+#Simester Two/Unit 2/music/data/million_playlists
+#Simester Two/Unit 2/music/data/tracks.csv
