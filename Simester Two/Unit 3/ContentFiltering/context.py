@@ -62,13 +62,15 @@ print()
 
 # GRAPH IT AND SORT IT
 
-
+print("sorting")
 for x in range(words.count()['count']):
-    if words.loc[x]['count'] <= 200 or (words.loc[x]['word'] in uselessWords and len(words.loc[x]['word']) <= 4):
+    if words.loc[x]['count'] <= 5 or (words.loc[x]['word'] in uselessWords and len(words.loc[x]['word']) <= 2):
         words.drop(index=x, inplace=True)
+
+print("saving")
 
 save_pickle("Simester Two/Unit 3/ContentFiltering/data/dot05_nsfw_words.p", words)
 words.to_csv("Simester Two/Unit 3/ContentFiltering/data/dot05_nsfw_words.csv")
 
-sb.barplot(data=pd.DataFrame(words), x='word', y='count')
+#sb.barplot(data=pd.DataFrame(words), x='word', y='count')
 
