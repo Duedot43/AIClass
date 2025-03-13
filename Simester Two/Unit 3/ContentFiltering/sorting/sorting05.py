@@ -64,7 +64,7 @@ print()
 
 print("sorting")
 for x in range(words.count()['count']):
-    if words.loc[x]['count'] <= 5 or (words.loc[x]['word'] in uselessWords and len(words.loc[x]['word']) <= 2):
+    if words.loc[x]['count'] <= 0 or (words.loc[x]['word'] in uselessWords and len(words.loc[x]['word']) <= 2):
         words.drop(index=x, inplace=True)
 
 print("saving")
