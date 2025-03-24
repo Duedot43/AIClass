@@ -2,13 +2,14 @@ import pandas as pd
 import pickle
 import re
 import seaborn as sb
+import re
 
 def save_pickle(file, value):
     pickle.dump(value, open(file, "wb"))
 def load_pickle(file):
     return pickle.load(open(file, "rb"))
 def remove_garbage(strng):
-    return re.sub(r'\d+', "", strng.replace(",", "").replace("-", " ").replace("?", "").replace("!", "").replace(".", ""))
+    return re.sub(r'[^a-zA-Z0-9 ]', '', strng)
 
 
 df = pd.read_csv("Simester Two/Unit 3/ContentFiltering/data/prompt_db.csv")
