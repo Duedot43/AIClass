@@ -2,6 +2,7 @@ import pandas as pd
 import pickle
 import re
 import seaborn as sb
+import re
 
 def save_pickle(file, value):
     pickle.dump(value, open(file, "wb"))
@@ -49,7 +50,7 @@ for scentince in prompts:
     for word in scentince:
         if word not in words['word']:
             words['word'].append(word)
-            words['count'].append(0)
+            words['count'].append(1)
         
         index = words['word'].index(word)
 
@@ -65,7 +66,7 @@ print()
 print("sorting")
 for x in range(words.count()['count']):
     words.at[x, 'word'] = words.loc[x]['word'].lower()
-    if words.loc[x]['count'] <= 0 or (words.loc[x]['word'] in uselessWords and len(words.loc[x]['word']) <= 2):
+    if (words.loc[x]['word'] in uselessWords and len(words.loc[x]['word']) <= 2):
         words.drop(index=x, inplace=True)
 
 print("saving")
