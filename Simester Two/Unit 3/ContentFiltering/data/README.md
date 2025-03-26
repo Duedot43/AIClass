@@ -1,0 +1,3 @@
+[dictionary_verified_top_nsfw_words.csv](https://github.com/Duedot43/AIClass/blob/main/Simester%20Two/Unit%203/ContentFiltering/data/dictionary_verified_top_nsfw_words.csv) -> nsfw words
+[dot05_nsfw_words.csv](https://github.com/Duedot43/AIClass/blob/main/Simester%20Two/Unit%203/ContentFiltering/data/dot05_nsfw_words.csv) -> sfw words (contradictory to the name)
+[most_words.txt](https://github.com/Duedot43/AIClass/blob/main/Simester%20Two/Unit%203/ContentFiltering/data/dictionary_verified_top_nsfw_words.csv) -> most used words
